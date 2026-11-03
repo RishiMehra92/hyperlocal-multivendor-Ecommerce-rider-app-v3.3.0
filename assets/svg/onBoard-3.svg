@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Card Drop Shadow -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#a0aec0" flood-opacity="0.15" />
+    </filter>
+    
+    <!-- Path Gradient -->
+    <linearGradient id="pathGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#006BD5 " />
+      <stop offset="100%" stop-color="#006BD5 " />
+    </linearGradient>
+
+    <!-- Path Shadow -->
+    <filter id="pathShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="15" stdDeviation="15" flood-color="#006BD5 " flood-opacity="0.2" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" rx="40" fill="#FFFFFF" />
+
+  <!-- Background Decorative Shapes -->
+  <circle cx="750" cy="80" r="160" fill="#006BD5 " opacity="0.8" />
+  <circle cx="730" cy="460" r="45" fill="#006BD5 " opacity="0.6" />
+  <ellipse cx="140" cy="740" rx="200" ry="120" fill="#006BD5 " opacity="0.6" />
+  <circle cx="-20" cy="300" r="80" fill="#006BD5 " opacity="0.5" />
+
+  <!-- Speed Lines -->
+  <line x1="430" y1="400" x2="520" y2="375" stroke="#006BD5 " stroke-width="8" stroke-linecap="round" />
+  <line x1="390" y1="480" x2="510" y2="450" stroke="#006BD5 " stroke-width="8" stroke-linecap="round" />
+  <line x1="420" y1="510" x2="490" y2="495" stroke="#006BD5 " stroke-width="8" stroke-linecap="round" />
+
+  <!-- The Winding Path -->
+  <!-- Layer 1: Simulated 3D thickness (offset downward) -->
+  <path d="M 270 650 Q 550 560, 480 460 T 650 380" 
+        fill="none" stroke="#006BD5 " stroke-width="50" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Layer 2: Main Path -->
+  <path d="M 270 640 Q 550 550, 480 450 T 650 370" 
+        fill="none" stroke="url(#pathGrad)" stroke-width="46" stroke-linecap="round" stroke-linejoin="round" filter="url(#pathShadow)" />
+
+  <!-- Map Pin (Top Right) -->
+  <!-- Base Shadows / Rings -->
+  <ellipse cx="650" cy="370" rx="46" ry="16" fill="#71a8ff" />
+  <ellipse cx="650" cy="370" rx="30" ry="10" fill="#006BD5 " />
+  <ellipse cx="650" cy="370" rx="15" ry="5" fill="#ffffff" opacity="0.8" />
+  
+  <!-- Pin Body -->
+  <path d="M 650 230 C 610 230, 580 265, 580 310 C 580 360, 650 400, 650 400 C 650 400, 720 360, 720 310 C 720 265, 690 230, 650 230 Z" 
+        fill="#006BD5 " />
+  <!-- Pin Cutout -->
+  <circle cx="650" cy="290" r="26" fill="#ffffff" />
+  <!-- Accent Sparks -->
+  <line x1="710" y1="230" x2="725" y2="200" stroke="#006BD5 " stroke-width="6" stroke-linecap="round" />
+  <line x1="740" y1="245" x2="765" y2="225" stroke="#006BD5 " stroke-width="6" stroke-linecap="round" />
+  <line x1="755" y1="265" x2="775" y2="255" stroke="#006BD5 " stroke-width="6" stroke-linecap="round" />
+
+  <!-- Navigation Arrow (Bottom Left) -->
+  <!-- Ground Shadow -->
+  <ellipse cx="260" cy="695" rx="80" ry="30" fill="#006BD5 " opacity="0.8" />
+  <ellipse cx="230" cy="695" rx="40" ry="15" fill="#006BD5 " opacity="0.8" />
+  
+  <!-- 3D Arrow Bottom / Side (Thickness) -->
+  <polygon points="122,608 140,630 240,645 285,730 270,695" fill="#006BD5 " />
+  <!-- Main Arrow Top Surface -->
+  <polygon points="345,535 125,615 245,635 270,715" 
+           fill="#006BD5 " stroke="#ffffff" stroke-width="8" stroke-linejoin="round" />
+
+  <!-- Top Main Card: "Navigate Easily" -->
+  <g transform="translate(64, 85)">
+    <rect width="510" height="165" rx="30" fill="#ffffff" filter="url(#shadow)" />
+    <!-- Big Blue Circle & Icon -->
+    <circle cx="100" cy="82" r="58" fill="#006BD5 " />
+    <polygon points="108,55 70,105 95,108 115,130" fill="#ffffff" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" transform="rotate(20 100 82)" />
+    <!-- Text -->
+    <text x="185" y="65" font-family="sans-serif" font-size="26" fill="#4a5568">Navigate Easily</text>
+    <text x="182" y="115" font-family="sans-serif" font-size="40" font-weight="900" fill="#006BD5 ">3.2 km <tspan fill="#1a202c">to store</tspan></text>
+  </g>
+
+
+
+  <!-- Left Pill 2: "Accurate Direction" -->
+  <g transform="translate(74, 404)">
+    <rect width="250" height="84" rx="42" fill="#ffffff" filter="url(#shadow)" />
+    <circle cx="42" cy="42" r="32" fill="#006BD5 " />
+    <!-- Small Navigation Icon -->
+    <polygon points="46,28 30,50 40,51 48,62" fill="#ffffff" stroke="#ffffff" stroke-width="2" stroke-linejoin="round" transform="rotate(25 42 42)" />
+    <!-- Text -->
+    <text x="92" y="38" font-family="sans-serif" font-size="20" font-weight="500" fill="#000000">Accurate</text>
+    <text x="92" y="62" font-family="sans-serif" font-size="20" font-weight="500" fill="#000000">Direction</text>
+  </g>
+
+  <!-- Bottom Right Pill: "Save Time" -->
+  <g transform="translate(510, 615)">
+    <rect width="220" height="84" rx="42" fill="#ffffff" filter="url(#shadow)" />
+    <circle cx="42" cy="42" r="32" fill="#006BD5 " />
+    <!-- Clock Icon -->
+    <circle cx="42" cy="42" r="14" fill="none" stroke="#006BD5 " stroke-width="4" />
+    <path d="M 42 34 V 42 L 48 48" fill="none" stroke="#006BD5 " stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Text -->
+    <text x="92" y="50" font-family="sans-serif" font-size="20" font-weight="600" fill="#006BD5 ">Save Time</text>
+  </g>
+</svg>

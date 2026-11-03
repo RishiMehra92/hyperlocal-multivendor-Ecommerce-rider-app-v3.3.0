@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "585970308064",
+    "project_id": "nezit-delivery-partner",
+    "storage_bucket": "nezit-delivery-partner.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585970308064:android:aeb9588a2d7ad74d425185",
+        "android_client_info": {
+          "package_name": "com.nezit.deliverypartner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "585970308064-ckno76li6s53rfdh8vu3kt61mvglftl1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nezit.deliverypartner",
+            "certificate_hash": "ceb1cece33c43884b2866a0a65c32112e62b28f0"
+          }
+        },
+        {
+          "client_id": "585970308064-ttojrfomk14mmjf88nqqp4nknlb9tq1t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nezit.deliverypartner",
+            "certificate_hash": "dd4226a50dc3b9937db54ff62597629bc4f79c20"
+          }
+        },
+        {
+          "client_id": "585970308064-it7edqnvc499pe2ooeo8usrn38eo1j1h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5SW-fJzZ3VCNm_KSywFxNUFYbZxVeFyA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "585970308064-it7edqnvc499pe2ooeo8usrn38eo1j1h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "585970308064-766vlkqb8k253hk3i5pnkh2939quqafc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.nezit.deliverypartner"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
